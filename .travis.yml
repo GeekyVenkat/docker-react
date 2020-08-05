@@ -4,6 +4,6 @@ services:
 before_install:
     - docker build -t geekyvenkat/docker-react -f Dockerfile.dev .
 script:
-    - docker run -e CI=true USERNAME/docker-react npm run test
+    - docker run -e CI=true geekyvenkat/docker-react npm run test
     
 
